@@ -1,0 +1,14 @@
+managed implementation in class ZBP_APICDS unique;
+//strict (2);
+
+define behavior for Z_APICDS alias PaymentAdvice
+persistent table I_PaymentAdvice
+lock master
+//authorization master ( instance )
+////etag master <field_name>
+{
+  create;
+  update;
+  delete;
+//  field CompanyCode, PaymentAdviceAccountType, PaymentAdviceAccount, PaymentAdvice;
+}

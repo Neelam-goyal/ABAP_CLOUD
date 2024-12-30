@@ -1,0 +1,4 @@
+@EndUserText.label: 'api service definition'
+define service Zsrv_api {
+  expose Z_APICDS;
+}
