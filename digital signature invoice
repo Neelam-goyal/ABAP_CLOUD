@@ -1,0 +1,310 @@
+CLASS zcl_http_invoice_print DEFINITION
+  PUBLIC
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+    DATA: xt_final        TYPE TABLE OF zi_sale_reg,
+          ls_xml_base64   TYPE string,
+          lv_access_token TYPE string.
+
+    DATA: lv_vbeln      TYPE c LENGTH 10,
+          lv_vbeln_n    TYPE c LENGTH 10,
+          lv_pack_num   TYPE c LENGTH 10,
+          rv_response   TYPE string,
+          rv_resp_signd TYPE string,
+          lv_resp_signd TYPE string,
+          lv_action     TYPE c LENGTH 10,
+          lv_dsign      TYPE c LENGTH 1,
+          lv_prntval    TYPE c LENGTH 10.
+
+    DATA: lo_client TYPE REF TO zcl_sd_custom_print,
+          lo_ads    TYPE REF TO zcl_ads_service,
+          lo_dsign  TYPE REF TO zcl_digital_signature.
+
+    INTERFACES if_http_service_extension .
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+
+ENDCLASS.
+
+            step1 : create class  zcl_digital_signature DEFINITION.
+            step2 :create class zcl_http_invoice_print definition.
+CLASS zcl_digital_signature DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+    DATA : lv_char10 TYPE c LENGTH 10 .
+
+    METHODS:
+      get_signed_pdf
+        IMPORTING
+                  im_base64_pdf           TYPE string
+                  im_action               LIKE lv_char10
+        RETURNING VALUE(iv_signed_base64) TYPE string.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcl_digital_signature IMPLEMENTATION.
+
+
+  METHOD get_signed_pdf.
+
+    DATA: url            TYPE string,
+          lo_http_client TYPE REF TO if_web_http_client.
+
+    DATA :
+      jname         TYPE string,
+      jsignpage     TYPE string,
+      jsignmode     TYPE string,
+      jdscname      TYPE string,
+      jdscpass      TYPE string,
+      jxloc         TYPE string,
+      jyloc         TYPE string,
+      jsignreason   TYPE string,
+      jsignname     TYPE string,
+      jsigndate     TYPE string,
+      jissignby     TYPE string,
+      jpageno       TYPE string,
+      jdoc          TYPE string,
+      mij_gw_string TYPE string,
+      page_str      TYPE string,
+      rv_response   TYPE string.
+
+    DATA:
+      lv_date    TYPE string,
+      lv_time    TYPE string,
+      lv_ampm(2) TYPE c,
+      lv_hr(2)   TYPE c.
+
+    DATA name_value_pairs  TYPE  if_web_http_request=>name_value_pairs   .
+
+    CLEAR : url.
+    url = 'http://digitalsign.mawaiweb.com/api/testsignpdf'. "'http://103.25.174.78:81/api/readsignpdf'.
+*    url = 'https://dsign.seniorflexonics.co.in:8090/api/seniorindia-dsign'. "'http://103.25.174.78:81/api/readsignpdf'.
+
+    DATA(dest11) = cl_http_destination_provider=>create_by_url( url ).
+    lo_http_client = cl_web_http_client_manager=>create_by_http_destination( dest11 ).
+
+    DATA(lo_request11) = lo_http_client->get_http_request( ).
+    lo_request11->set_content_type( 'application/json; charset=utf-8' ).
+
+    name_value_pairs = VALUE #(
+                   ( name = '~request_method'  value = 'POST'  )
+                   ( name = '~server_protocol' value = 'HTTP/1.1'  )
+                   ( name = 'Content-Type'     value = 'application/json; charset=utf-8'  )
+                   ).
+
+    lo_request11->set_header_fields( i_fields = name_value_pairs ).
+
+    CONCATENATE '"' sy-datum+6(2) sy-datum+4(2)  sy-datum(4) '_' sy-uzeit(2) sy-uzeit+2(2)  sy-uzeit+4(2) '",'  INTO jname.
+    jsignpage = '"All",'.
+    jsignmode = '"",'.
+    jdscname = '"",'.
+    jdscpass = '"",'.
+*    jxloc = '430,'.
+*    jyloc = '765,'.
+    jsignreason =  '"",'.
+    jsignname = '"Jyoti Sharma",'.
+    jissignby = 'true,'.
+
+    IF im_action = 'oeminv'.
+      jxloc = '650,'.
+      jyloc = '580,'.
+    ELSEIF im_action = 'taxinv'.
+      jxloc = '650,'.
+      jyloc = '565,'.
+    ELSEIF im_action = 'dcnote '.
+      jxloc = '650,'.
+      jyloc = '572,'.
+    ENDIF.
+
+
+    CONCATENATE '"' page_str '",' INTO jpageno.
+
+    rv_response = im_base64_pdf.
+    jdoc = '"' &&  rv_response  && '"'.
+
+    lv_hr = sy-uzeit(2).
+    IF lv_hr GE '12'.
+      lv_ampm = 'PM'.
+      IF lv_hr > '12'.
+        lv_hr = sy-uzeit(2) - 12.
+      ENDIF.
+    ELSE.
+      lv_ampm = 'AM'.
+    ENDIF.
+
+    CONCATENATE '"' sy-datum+6(2) '/' sy-datum+4(2) '/' sy-datum(4) INTO lv_date.
+    CONCATENATE lv_hr ':' sy-uzeit+2(2) ':' sy-uzeit+4(2)  INTO lv_time.
+
+    CONDENSE: lv_date,lv_time.
+    CONCATENATE lv_date lv_time lv_ampm '",' INTO jsigndate SEPARATED BY space.
+
+    CONDENSE : jname ,jsignpage ,jxloc, jyloc, jsignreason,jsignname,jissignby,jpageno,jdoc.
+
+*    CONCATENATE
+*    '{'
+*    '"Name":' jname
+*    '"SignPage":' jsignpage
+*    '"SignMode":' jsignmode
+*    '"DSCTokenName":' jdscname
+*    '"DSCPassword":' jdscpass
+*    '"XLoc":' jxloc
+*    '"YLoc":' jyloc
+*    '"signReason":' jsignreason
+*    '"signerName":' jsignname
+*    '"signdatetime":' jsigndate
+*    '"IsSignedBy":' jissignby
+*    '"PageNo":' jpageno
+*    '"Document":' jdoc
+*    '}' INTO  mij_gw_string.
+*    CONDENSE  mij_gw_string.
+
+    CONCATENATE
+    '{'
+    '"Name":' jname
+    '"SignPage":' jsignpage
+    '"Pfxfilename":' jdscname
+    '"pfxdscpassword":' jdscpass
+    '"XLoc":' jxloc
+    '"YLoc":' jyloc
+    '"signReason":' jsignreason
+    '"signerName":' jsignname
+    '"signdatetime":' jsigndate
+    '"IsSignedBy":' jissignby
+    '"PageNo":' jpageno
+    '"Document":' jdoc
+    '}' INTO  mij_gw_string.
+    CONDENSE  mij_gw_string.
+
+    lo_request11->append_text(
+      EXPORTING
+        data = mij_gw_string
+    ).
+
+    TRY.
+
+        DATA(lo_response11) = lo_http_client->execute( i_method = if_web_http_client=>post ).
+
+      CATCH cx_web_http_client_error.
+
+    ENDTRY.
+
+    DATA(response_body11) = lo_response11->get_text( ).
+    iv_signed_base64 = response_body11.
+
+
+  ENDMETHOD.
+ENDCLASS.
+
+CLASS zcl_http_invoice_print IMPLEMENTATION.
+
+
+  METHOD if_http_service_extension~handle_request.
+DATA(lt_input) = request->get_form_fields( ).
+
+    READ TABLE lt_input INTO DATA(ls_action) WITH KEY name = 'actionname'.
+    IF sy-subrc EQ 0.
+      lv_action = ls_action-value.
+    ENDIF.
+
+    READ TABLE lt_input INTO DATA(ls_action1) WITH KEY name = 'radiovalue'.
+    IF sy-subrc EQ 0.
+      lv_prntval = ls_action1-value.
+    ENDIF.
+
+    READ TABLE lt_input INTO DATA(ls_input) WITH KEY name = 'billingdocument'.
+    IF sy-subrc EQ 0.
+      lv_vbeln = ls_input-value.
+    ENDIF.
+
+    READ TABLE lt_input INTO DATA(ls_sign) WITH KEY name = 'digitalsignature'.
+    IF sy-subrc EQ 0.
+      lv_dsign = ls_sign-value.
+    ENDIF.
+
+
+
+    lv_vbeln_n = lv_vbeln.
+    lv_vbeln = |{ lv_vbeln ALPHA = IN }| .
+
+
+*    READ TABLE lt_input INTO DATA(ls_pack) WITH KEY name = 'pack_num'.
+*    IF sy-subrc EQ 0.
+*      lv_pack_num = ls_pack-value.
+*    ENDIF.
+*    lv_pack_num = |{ lv_pack_num ALPHA = IN }| .
+
+    "********Creation of object**************
+    CREATE OBJECT lo_client.
+    CREATE OBJECT lo_ads.
+    CREATE OBJECT lo_dsign.
+
+    ""*****Calling Methods to get PDF code base64
+    lv_access_token = lo_ads->get_ads_access_token(  ).
+IF lv_action = 'oeminv'.
+
+      xt_final      = lo_client->get_billing_data( iv_vbeln = lv_vbeln  iv_action = lv_action ).
+
+      IF xt_final[] IS NOT INITIAL.
+
+        READ TABLE Xt_final INTO DATA(w_final) INDEX 1 .
+
+*        IF w_final-DistributionChannel = '30' .
+*
+*          ls_xml_base64 = lo_client->prep_xml_tax_inv( it_final = xt_final[] iv_action = lv_action im_prntval = lv_prntval ).
+*          rv_response = lo_ads->get_ads_api_toget_base64(
+*            im_access_token  = lv_access_token
+*            im_template_name = 'ZSD_EXPORT_TAX_INVOICE/ZSD_SIPL_EXPORT_TAX_INVOICE'
+*            im_xml_base64    = ls_xml_base64 ).
+*
+*        ELSE.
+
+        ls_xml_base64 = lo_client->prep_xml_tax_inv( it_final = xt_final[] iv_action = lv_action im_prntval = lv_prntval ).
+        rv_response = lo_ads->get_ads_api_toget_base64(
+          im_access_token  = lv_access_token
+          im_template_name = 'ZSD_FORM_INVOICE/ZSD_SIPL_TAX_INVOICE'
+          im_xml_base64    = ls_xml_base64 ).
+
+*        ENDIF.
+
+      ENDIF.
+
+      IF lv_dsign = 'X'.
+
+      """""""**********Start: Digital Sign**********************
+      rv_resp_signd = lo_dsign->get_signed_pdf( im_base64_pdf = rv_response im_action = lv_action ).
+      lv_resp_signd = rv_resp_signd.
+
+      SPLIT lv_resp_signd AT '"Message":' INTO DATA(split_1) DATA(split_2).
+      IF split_2 EQ 'null}'.
+
+        CLEAR: rv_resp_signd.
+        rv_resp_signd = rv_response.
+
+      ELSE.
+
+        SPLIT split_1  AT '"' INTO DATA(lv1) DATA(lv2) DATA(lv3) DATA(lv4) DATA(lv5) DATA(lv6) DATA(lv7).
+        rv_resp_signd = lv4.
+        rv_response = rv_resp_signd.
+
+      ENDIF.
+      """""""**********End: Digital Sign**********************
+      endif.
+
+    ENDIF.
+   ""**Setiing response/pdf in base64 format to UI5
+    response->set_text(
+      EXPORTING
+        i_text = rv_response ).
+
+  ENDMETHOD.
