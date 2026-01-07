@@ -1,0 +1,14 @@
+managed implementation in class zbp_e_multiple_logo unique;
+strict ( 2 );
+
+define behavior for ZE_MULTIPLE_LOGO //alias <alias_name>
+persistent table zmulti_logo
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) logoname;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for vendor code'
+define service Z_SD_VENDOR_CODE {
+  expose ZE_VENDOR_CODE;
+}

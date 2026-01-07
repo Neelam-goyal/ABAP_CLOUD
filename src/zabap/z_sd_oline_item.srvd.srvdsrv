@@ -1,0 +1,4 @@
+@EndUserText.label: 'Open line item'
+define service Z_SD_OLINE_ITEM {
+  expose ZI_OPEN_LINE_ITEM;
+}

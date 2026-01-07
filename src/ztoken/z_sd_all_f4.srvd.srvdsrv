@@ -1,0 +1,14 @@
+@EndUserText.label: 'SD for all F4help'
+define service Z_SD_ALL_F4 {
+  expose ZI_SALEDOC_F4;
+  expose ZI_BDOC_F4;
+  expose ZI_GE_VENDOR_F4;
+  expose ZI_GATE_ENTRY_F4;
+  expose ZI_MATERIAL_F4;
+  expose ZI_SLOC_F4;
+  expose ZI_PLANT;
+  expose ZI_GATE_OUT_F4;
+  expose ZI_SUPPLIER_F4;
+  expose ZI_CUSTOMER_F4;
+  expose ZI_PURDOC_F4;
+}

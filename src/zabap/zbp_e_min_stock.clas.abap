@@ -1,0 +1,9 @@
+CLASS zbp_e_min_stock DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF ze_min_stock.
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS ZBP_E_MIN_STOCK IMPLEMENTATION.
+ENDCLASS.

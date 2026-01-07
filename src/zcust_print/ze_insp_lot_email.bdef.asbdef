@@ -1,0 +1,14 @@
+managed implementation in class zbp_e_insp_lot_email unique;
+strict ( 2 );
+
+define behavior for ZE_INSP_LOT_EMAIL //alias <alias_name>
+persistent table yinsp_lot_email
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  field ( readonly:update ) lot_type, plant, emailid;
+  create;
+  update;
+  delete;
+}

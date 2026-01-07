@@ -1,0 +1,4 @@
+@EndUserText.label: 'tax percent'
+define service Z_SD_TAX_GST_PRCNT {
+  expose ze_tax_gst_prcnt;
+}

@@ -1,0 +1,9 @@
+CLASS zbp_e_sysid DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF ze_sysid.
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS ZBP_E_SYSID IMPLEMENTATION.
+ENDCLASS.

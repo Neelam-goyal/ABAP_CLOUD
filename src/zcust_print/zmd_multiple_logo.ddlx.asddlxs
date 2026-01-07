@@ -1,0 +1,26 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'logoname',
+                typeNamePlural: 'logoname',
+                title: { type: #STANDARD, label: 'Travel', value: 'logoname'} }
+               }
+annotate view ZE_MULTIPLE_LOGO with
+{
+
+  @UI.facet: [ { id:              'Travel',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'logoname',
+                 position:        10 } ]
+
+  @UI: {  lineItem:       [ { position: 10 } ],
+          identification: [ { position: 10 } ],
+          selectionField: [ { position: 10 } ] }
+  @EndUserText.label: 'Logo Name'
+  logoname;
+
+  @UI: { lineItem:       [ { position: 20 } ], identification: [ { position: 20 } ] }
+  @EndUserText.label: 'Logo Value'
+  logovalue;
+  
+  }

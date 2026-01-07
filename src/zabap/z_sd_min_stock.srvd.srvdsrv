@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for min stock'
+define service Z_SD_MIN_STOCK {
+  expose ZE_MIN_STOCK;
+}

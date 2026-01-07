@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Devlivery Unit Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Devlivery Unit Print"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.deliveryunitprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_C1123618B9CF9AD77CA65B11A9B4050771BD3AE3_TM",
+    "semanticObject": "ZDELUNITPRINT",
+    "action": "Print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_C1123618B9CF9AD77CA65B11A9B4050771BD3AE3_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Devlivery Unit Print",
+        "icon": "sap-icon://shipping-status"
+      }
+    }
+  ]
+}

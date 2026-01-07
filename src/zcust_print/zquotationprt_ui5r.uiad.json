@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Quotation Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Quotation Print"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.quotationprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_A9C4DDBF792EE39B8C97E8A38C4F50AC04F6A3B8_TM",
+    "semanticObject": "ZQUOTATIONPRT",
+    "action": "PRINT",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_A9C4DDBF792EE39B8C97E8A38C4F50AC04F6A3B8_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Quotation Print",
+        "icon": "sap-icon://decision"
+      }
+    }
+  ]
+}

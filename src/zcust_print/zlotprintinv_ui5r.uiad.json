@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Print Quality Certificate",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Print Quality Certificate"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.lotprintinv"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_F99727116961F07077CE613D26E3133F85253481_TM",
+    "semanticObject": "ZLOTPRINTINV",
+    "action": "Print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_F99727116961F07077CE613D26E3133F85253481_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Print Quality Certificate",
+        "icon": "sap-icon://add-coursebook"
+      }
+    }
+  ]
+}

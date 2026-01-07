@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "SCN Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "SCN Print"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.zscnprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_B9C9CACA6260C4DE111D2548D9BF8C8CD69D6DBE_TM",
+    "semanticObject": "ZSCN_Print",
+    "action": "Print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_B9C9CACA6260C4DE111D2548D9BF8C8CD69D6DBE_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "SCN Print",
+        "icon": "sap-icon://print"
+      }
+    }
+  ]
+}

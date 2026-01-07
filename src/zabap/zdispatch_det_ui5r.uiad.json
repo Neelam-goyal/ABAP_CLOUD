@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Dispatch From Detail",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Dispatch From Detail"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.zdispfrom"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_49275BAE8B1542C682E38C829E2288CBD55DE57B_TM",
+    "semanticObject": "DISPATCH_FROM_DET",
+    "action": "Details",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_49275BAE8B1542C682E38C829E2288CBD55DE57B_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Dispatch From Detail",
+        "icon": "sap-icon://detail-view"
+      }
+    }
+  ]
+}

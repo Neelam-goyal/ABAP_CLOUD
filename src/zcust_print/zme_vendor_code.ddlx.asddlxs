@@ -1,0 +1,31 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'VendorCode',
+                typeNamePlural: 'VendorCode',
+                title: { type: #STANDARD, label: 'Travel', value: 'customer'} }
+               }
+               
+annotate view ZE_VENDOR_CODE with
+{
+
+  @UI.facet: [ { id:              'Travel',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'VendorCode',
+                 position:        10 } ]
+
+  @UI: {  lineItem:       [ { position: 10 } ],
+          identification: [ { position: 10 } ],
+          selectionField: [ { position: 10 } ] }
+  @EndUserText.label: 'Customer'
+  customer;
+
+  @UI: { lineItem:       [ { position: 20 } ], identification: [ { position: 20 } ] }
+  @EndUserText.label: 'Plant'
+  plant;
+  
+  @UI: { lineItem:       [ { position: 30 } ], identification: [ { position: 30 } ] }
+  @EndUserText.label: 'Vendor'
+  vendor;  
+  
+  }

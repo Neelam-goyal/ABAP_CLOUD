@@ -1,0 +1,36 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Token Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Token Print"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.tokenprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_35110F43437D48887E697ECB80E023B8E9B95473_TM",
+    "semanticObject": "ZTokenPR",
+    "action": "Print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_35110F43437D48887E697ECB80E023B8E9B95473_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Token Print",
+        "subtitle": "MM",
+        "icon": "sap-icon://accessibility"
+      }
+    }
+  ]
+}

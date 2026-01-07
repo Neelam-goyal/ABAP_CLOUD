@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>SLIN_BADI_DBTAB_ACCESS</SHORTTEXT>
+   <SPOT_NAME>SLIN_SEC_BADIS</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>SLIN_SEC_BADIS</SPOT_NAME>
+     <BADI_NAME>SLIN_BADI_DBTAB_ACCESS</BADI_NAME>
+     <IMPL_NAME>ZSLIN_BADI_DBTAB_ACCESS</IMPL_NAME>
+     <IMPL_CLASS>ZCL_SLIN_BADI_DBTAB_ACCESS</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <IS_DEFAULT>X</IS_DEFAULT>
+     <IMPL_SHORTTEXT>BADI</IMPL_SHORTTEXT>
+     <LOCKED_IN_CUSTOMIZING>X</LOCKED_IN_CUSTOMIZING>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

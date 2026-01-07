@@ -1,0 +1,51 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'plant',
+                typeNamePlural: 'plant',
+                title: { type: #STANDARD, label: 'Travel', value: 'plant'} }
+               }
+               
+annotate view ZE_MIN_STOCK with
+{
+
+  @UI.facet: [ { id:              'Travel',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'plant',
+                 position:        10 } ]
+
+  @UI: {  lineItem:       [ { position: 10 } ],
+          identification: [ { position: 10 } ],
+          selectionField: [ { position: 10 } ] }
+  @EndUserText.label: 'Plant'
+  plant;
+
+  @UI: { lineItem:       [ { position: 20 } ], identification: [ { position: 20 } ] }
+  @EndUserText.label: 'Material'
+  material;
+  
+  @UI: { lineItem:       [ { position: 30 } ], identification: [ { position: 30 } ] }
+  @EndUserText.label: 'SafetyStock'
+  safetystock;  
+
+  @UI: { lineItem:       [ { position: 40 } ], identification: [ { position: 40 } ] }
+  @EndUserText.label: 'storagelocation'
+  storagelocation;  
+
+  @UI: { lineItem:       [ { position: 50 } ], identification: [ { position: 50 } ] }
+  @EndUserText.label: 'materialdesc'
+  materialdesc;  
+  
+  @UI: { lineItem:       [ { position: 60 } ], identification: [ { position: 60 } ] }
+  @EndUserText.label: 'uom'
+  uom;  
+  
+  @UI: { lineItem:       [ { position: 70 } ], identification: [ { position: 70 } ] }
+  @EndUserText.label: 'createdby'
+  createdby;  
+
+  @UI: { lineItem:       [ { position: 80 } ], identification: [ { position: 80 } ] }
+  @EndUserText.label: 'createdon'
+  createdon;  
+            
+  }

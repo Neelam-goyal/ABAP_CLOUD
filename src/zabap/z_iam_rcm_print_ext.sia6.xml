@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SIA6" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SIA6>
+    <MAIN_OBJECT>
+     <NAME>Z_IAM_RCM_PRINT_EXT</NAME>
+     <TYPE>SIA6</TYPE>
+     <DESCRIPTION>IAM for RCM print</DESCRIPTION>
+     <RESPONSIBLE>CB9980000003</RESPONSIBLE>
+     <MASTER_LANGUAGE>EN</MASTER_LANGUAGE>
+     <MASTER_SYSTEM>M1C</MASTER_SYSTEM>
+     <PACKAGE_REF>
+      <PACKAGE_NAME>ZABAP</PACKAGE_NAME>
+     </PACKAGE_REF>
+     <ABAP_LANGU_VERSION>5</ABAP_LANGU_VERSION>
+    </MAIN_OBJECT>
+    <APP_ID>Z_IAM_RCM_PRINT_EXT</APP_ID>
+    <APP_TYPE>EXT</APP_TYPE>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
+    <UI_APP_ID>ZRCMINVPRINT_UI5R</UI_APP_ID>
+    <SERVICE>
+     <item>
+      <REL_NAME>Z_SB_FI_RCM_INV</REL_NAME>
+      <REL_TYPE>G4BA</REL_TYPE>
+      <APP_ID>Z_IAM_RCM_PRINT_EXT</APP_ID>
+      <SRVC_NAME>008F1AA3BCF89E68AC9D151E019298</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <UIAD_SRC>ZRCMINVPRINT_UI5R</UIAD_SRC>
+      <TEXT>SB for rcm data</TEXT>
+      <TYPE_TEXT>OData V4</TYPE_TEXT>
+     </item>
+     <item>
+      <REL_NAME>ZHTTP_FI_DEBIT_NOTE</REL_NAME>
+      <REL_TYPE>HTTP</REL_TYPE>
+      <APP_ID>Z_IAM_RCM_PRINT_EXT</APP_ID>
+      <SRVC_NAME>23959F0F58E174F983689829C1897A</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <TEXT>FI Print</TEXT>
+      <TYPE_TEXT>HTTP Service</TYPE_TEXT>
+     </item>
+    </SERVICE>
+    <PUBLISH_STATUS>p</PUBLISH_STATUS>
+   </SIA6>
+  </asx:values>
+ </asx:abap>
+</abapGit>

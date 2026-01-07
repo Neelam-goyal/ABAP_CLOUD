@@ -1,0 +1,26 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Num2String',
+                typeNamePlural: 'Num2String',
+                title: { type: #STANDARD, label: 'Travel', value: 'num'} }
+               }
+annotate view ZE_NUM_TO_STRING with
+{
+
+  @UI.facet: [ { id:              'Travel',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'Num2String',
+                 position:        10 } ]
+
+  @UI: {  lineItem:       [ { position: 10 } ],
+          identification: [ { position: 10 } ],
+          selectionField: [ { position: 10 } ] }
+  @EndUserText.label: 'Number'
+  Num;
+
+  @UI: { lineItem:       [ { position: 20 } ], identification: [ { position: 20 } ] }
+  @EndUserText.label: 'Word'
+   Word;
+  
+  }

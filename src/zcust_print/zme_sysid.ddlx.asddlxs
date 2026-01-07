@@ -1,0 +1,30 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'SystemID',
+                typeNamePlural: 'SystemID',
+                title: { type: #STANDARD, label: 'Travel', value: 'objcode'} }
+               }
+annotate view ZE_SYSID with
+{
+
+  @UI.facet: [ { id:              'Travel',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'SystemID',
+                 position:        10 } ]
+
+  @UI: {  lineItem:       [ { position: 10 } ],
+          identification: [ { position: 10 } ],
+          selectionField: [ { position: 10 } ] }
+  @EndUserText.label: 'Object'
+  objcode;
+
+  @UI: { lineItem:       [ { position: 20 } ], identification: [ { position: 20 } ] }
+  @EndUserText.label: 'System ID'
+  sysid;
+
+  @UI: { lineItem:       [ { position: 30 } ], identification: [ { position: 30 } ] }
+  @EndUserText.label: 'Object Value'
+  objvalue;
+    
+  }

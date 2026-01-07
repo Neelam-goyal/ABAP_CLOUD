@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for token gate entry'
+define service Z_SD_TOKEN_GE {
+  expose ZI_TOKEN_GE;
+}

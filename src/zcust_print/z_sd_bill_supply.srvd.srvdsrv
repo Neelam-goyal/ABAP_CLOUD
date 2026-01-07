@@ -1,0 +1,4 @@
+@EndUserText.label: 'Bill of supply'
+define service Z_SD_BILL_SUPPLY {
+  expose ZI_BILL_SUPPLY;
+}

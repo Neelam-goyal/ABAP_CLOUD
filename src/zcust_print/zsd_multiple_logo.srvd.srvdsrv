@@ -1,0 +1,4 @@
+@EndUserText.label: 'Multiple logo Service definaions'
+define service ZSD_MULTIPLE_LOGO {
+  expose ZE_MULTIPLE_LOGO;
+}

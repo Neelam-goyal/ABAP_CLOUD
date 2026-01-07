@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Maintain System Detail",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Maintain System Detail"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.maintsystemid"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_90019388E705C5671B206CAFD77E676698003584_TM",
+    "semanticObject": "Maintain_System_id",
+    "action": "Report",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_90019388E705C5671B206CAFD77E676698003584_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Maintain System Detail",
+        "icon": "sap-icon://sys-back"
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "SD:Custom Print"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.blvinvoice"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_7A16A6E74A496120BAA17D777DE24FC2B18AE58B_TM",
+    "semanticObject": "ZSDPRINT",
+    "action": "print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_7A16A6E74A496120BAA17D777DE24FC2B18AE58B_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "SD:Custom Print",
+        "subtitle": "blv",
+        "icon": "sap-icon://sales-document"
+      }
+    }
+  ]
+}

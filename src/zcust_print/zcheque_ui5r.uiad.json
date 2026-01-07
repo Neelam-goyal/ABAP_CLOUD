@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Cheque Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Cheque Print"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.chequeprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_5E57C90254004FB0E627CCFF23329F7AA5510632_TM",
+    "semanticObject": "ZCheque",
+    "action": "Manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_5E57C90254004FB0E627CCFF23329F7AA5510632_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Cheque Print",
+        "icon": "sap-icon://attachment-text-file"
+      }
+    }
+  ]
+}

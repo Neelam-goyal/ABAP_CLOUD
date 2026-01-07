@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for system id'
+define service Z_SD_SYSID {
+  expose ZE_SYSID;
+}

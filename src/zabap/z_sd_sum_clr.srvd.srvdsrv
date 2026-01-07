@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for clear'
+define service Z_SD_SUM_CLR {
+  expose ZI_SUM_CLR;
+}

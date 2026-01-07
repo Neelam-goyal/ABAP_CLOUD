@@ -1,0 +1,9 @@
+CLASS zbp_e_vendor_code DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF ze_vendor_code.
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS ZBP_E_VENDOR_CODE IMPLEMENTATION.
+ENDCLASS.

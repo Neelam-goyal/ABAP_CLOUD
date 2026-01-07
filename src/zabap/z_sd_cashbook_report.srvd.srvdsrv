@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for cashbook Report'
+define service Z_sd_cashbook_report {
+  expose ZI_cashbook_report;
+}

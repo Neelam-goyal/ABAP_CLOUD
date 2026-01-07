@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for quotation print'
+define service Z_SD_PRINT_QUOT {
+  expose ZI_PRINT_QUOT;
+}

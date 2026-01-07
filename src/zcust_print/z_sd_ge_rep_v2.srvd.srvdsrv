@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate entry'
+define service Z_SD_GE_REP_V2 {
+  expose ZI_GATE_ENTRY_REPORT;
+}

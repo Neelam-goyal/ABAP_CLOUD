@@ -1,0 +1,22 @@
+managed implementation in class zbp_e_cred_clr unique;
+strict ( 2 );
+
+define behavior for ZE_CRED_CLR //alias <alias_name>
+persistent table zsd_cred_clr
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  field ( readonly : update )
+  Gstin, Ownerid, Authtoken;
+//  UrlEinvGen,
+//  UrlEinvCanc,
+//  UrlQrb2c,
+//  UrlEwayGen,
+//  UrlEwayIrn,
+//  UrlEwayPartb,
+//  UrlEwayCanc;
+  create;
+  update;
+  delete;
+}

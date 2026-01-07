@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Schedule Aggrement Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Schedule Aggrement Print"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.scheduleagreementprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_F9004F7198D4960AF2AC9A12C35EAA9ACA1B5FC6_TM",
+    "semanticObject": "schedule_aggrement_print",
+    "action": "print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_F9004F7198D4960AF2AC9A12C35EAA9ACA1B5FC6_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Schedule Aggrement Print"
+      }
+    }
+  ]
+}

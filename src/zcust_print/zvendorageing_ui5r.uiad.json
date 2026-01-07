@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Vendor Ageing Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Vendor Ageing Report"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.vendorageing"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_FA935666C9F597EAE0F597BF4C7696F754AFE258_TM",
+    "semanticObject": "ZVendorAgeing",
+    "action": "Report",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_FA935666C9F597EAE0F597BF4C7696F754AFE258_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Vendor Ageing Report",
+        "icon": "sap-icon://supplier"
+      }
+    }
+  ]
+}

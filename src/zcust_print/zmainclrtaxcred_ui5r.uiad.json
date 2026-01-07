@@ -1,0 +1,36 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Maintain clear tax",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Maintain clear tax"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.maintcreartaxcred"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_7260978D8F10F9900BB3D1658F8D3FC1EC807ECA_TM",
+    "semanticObject": "ZMAINCLRTAXCRED",
+    "action": "report",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_7260978D8F10F9900BB3D1658F8D3FC1EC807ECA_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Maintain clear tax",
+        "subtitle": "credentials",
+        "icon": "sap-icon://increase-line-height"
+      }
+    }
+  ]
+}

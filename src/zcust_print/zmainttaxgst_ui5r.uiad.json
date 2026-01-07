@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Maintain Tax GST percentage",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Maintain Tax GST percentage"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.zmainttaxgst"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_85917D90468A37373BCD6843DE7A5295AE3174FD_TM",
+    "semanticObject": "ZMaint_Tax_GST",
+    "action": "Create",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_85917D90468A37373BCD6843DE7A5295AE3174FD_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Maintain Tax GST percentage"
+      }
+    }
+  ]
+}

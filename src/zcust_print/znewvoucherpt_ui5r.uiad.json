@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "New Voucher Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "New Voucher Print"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.newvoucherprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_D55F93289959010369261789E037976FC50990A2_TM",
+    "semanticObject": "New_Voucher_Print",
+    "action": "Print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_D55F93289959010369261789E037976FC50990A2_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "New Voucher Print",
+        "icon": "sap-icon://accounting-document-verification"
+      }
+    }
+  ]
+}

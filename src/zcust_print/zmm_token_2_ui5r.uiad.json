@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Token Process",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Token Process"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.tokenmaintenance"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_87CD0402A95ACCB8C36009818A19B4CB853F3692_TM",
+    "semanticObject": "ZMM_Token",
+    "action": "create",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_87CD0402A95ACCB8C36009818A19B4CB853F3692_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Token Process",
+        "subtitle": "mm"
+      }
+    }
+  ]
+}

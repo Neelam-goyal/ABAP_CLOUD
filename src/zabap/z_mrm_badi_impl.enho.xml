@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>MRM BADI implementation</SHORTTEXT>
+   <SPOT_NAME>MRM_HEADER_DATA_DEFAULT</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>MRM_HEADER_DATA_DEFAULT</SPOT_NAME>
+     <BADI_NAME>MRM_HEADER_DATA_DEFAULT</BADI_NAME>
+     <IMPL_NAME>Z_MRM_BADI_IMPL</IMPL_NAME>
+     <IMPL_CLASS>ZCL_MRM_BADI</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <IMPL_SHORTTEXT>MIRO BADI Implementation</IMPL_SHORTTEXT>
+     <LOCKED_IN_CUSTOMIZING>X</LOCKED_IN_CUSTOMIZING>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

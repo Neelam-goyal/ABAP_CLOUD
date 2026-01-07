@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for migo/miro'
+define service Z_SD_MIGO_MIRO {
+  expose ZI_MIGO_MIRO;
+}

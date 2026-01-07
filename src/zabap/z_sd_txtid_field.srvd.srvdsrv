@@ -1,0 +1,4 @@
+@EndUserText.label: 'text id'
+define service Z_SD_TXTID_FIELD {
+  expose ze_txtid_field;
+}

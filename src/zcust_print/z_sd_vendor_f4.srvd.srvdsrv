@@ -1,0 +1,4 @@
+@EndUserText.label: 'Vendor F4'
+define service Z_sd_vendor_f4 {
+  expose ZI_GE_VENDOR_F4;
+}

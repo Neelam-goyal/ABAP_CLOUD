@@ -1,0 +1,62 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'ClearTaxCred',
+                typeNamePlural: 'ClearTaxCred',
+                title: { type: #STANDARD, label: 'Travel', value: 'Gstin'} }
+               }
+annotate view ZE_CRED_CLR with
+{
+
+  @UI.facet: [ { id:              'Travel',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'ClearTaxCred',
+                 position:        10 } ]
+
+  @UI: {  lineItem:       [ { position: 10 } ],
+          identification: [ { position: 10 } ],
+          selectionField: [ { position: 10 } ] }
+  @EndUserText.label: 'GSTIN'
+  gstin;
+
+  @UI: { lineItem:       [ { position: 20 } ], identification: [ { position: 20 } ] }
+  @EndUserText.label: 'OwnerId'
+  ownerid;
+
+  @UI: { lineItem:       [ { position: 30 } ], identification: [ { position: 30 } ] }
+  @EndUserText.label: 'AuthenticationToken'
+  authtoken;
+
+  @UI: { lineItem:       [ { position: 40 } ], identification: [ { position: 40 } ] }
+  @EndUserText.label: 'URL:AuthenticationToken'
+  url_auth_token;
+
+  @UI: { lineItem:       [ { position: 50 } ], identification: [ { position: 50 } ] }
+  @EndUserText.label: 'URL:EinvGeneration'
+  url_einv_gen;
+  
+  @UI: { lineItem:       [ { position: 60 } ], identification: [ { position: 60 } ] }
+  @EndUserText.label: 'URL:EinvCancel'
+  url_einv_canc;
+  
+  @UI: { lineItem:       [ { position: 70 } ], identification: [ { position: 70 } ] }
+  @EndUserText.label: 'URL:Qrb2c'
+  url_qrb2c;
+  
+  @UI: { lineItem:       [ { position: 80 } ], identification: [ { position: 80 } ] }
+  @EndUserText.label: 'URL:EwayBill Without IRN'
+  url_eway_gen;
+  
+  @UI: { lineItem:       [ { position: 90 } ], identification: [ { position: 90 } ] }
+  @EndUserText.label: 'URL:EwaybillByIrn'
+ url_eway_irn;
+  
+  @UI: { lineItem:       [ { position: 100 } ], identification: [ { position: 100 } ] }
+  @EndUserText.label: 'URL:EwayPartB'
+  url_eway_partb;
+  
+  @UI: { lineItem:       [ { position: 110 } ], identification: [ { position: 110 } ] }
+  @EndUserText.label: 'URL:EwayCancel'
+  url_eway_canc;
+                    
+  }

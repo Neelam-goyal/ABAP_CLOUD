@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "GRN PRINT",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "GRN PRINT"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.zgrnprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_86091707019D0B43BE2F9EB6DE497B4A7ED05AA7_TM",
+    "semanticObject": "ZGRNPRINT",
+    "action": "print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_86091707019D0B43BE2F9EB6DE497B4A7ED05AA7_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "GRN PRINT",
+        "icon": "sap-icon://inventory"
+      }
+    }
+  ]
+}

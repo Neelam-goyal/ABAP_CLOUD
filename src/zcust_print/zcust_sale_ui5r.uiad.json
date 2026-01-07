@@ -1,0 +1,36 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Customer Sale Return",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Customer Sale Return"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.zsalesreturn"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_39B6C41E6AD143122B6FAE5D49AB86272141C138_TM",
+    "semanticObject": "ZCUST_Sale",
+    "action": "Return",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_39B6C41E6AD143122B6FAE5D49AB86272141C138_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Customer Sale Return",
+        "subtitle": "return",
+        "icon": "sap-icon://accessibility"
+      }
+    }
+  ]
+}

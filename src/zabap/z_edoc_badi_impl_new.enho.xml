@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>Edoc Badi implementation</SHORTTEXT>
+   <SPOT_NAME>ES_EDOCUMENT_CLOUD</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>ES_EDOCUMENT_CLOUD</SPOT_NAME>
+     <BADI_NAME>EDOC_ADAPTOR_CLOUD</BADI_NAME>
+     <IMPL_NAME>Z_EDOC_BADI_IMPL_NEW</IMPL_NAME>
+     <IMPL_CLASS>ZCL_EDOC_BADI_IMPL</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <LOCKED_IN_CUSTOMIZING>X</LOCKED_IN_CUSTOMIZING>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

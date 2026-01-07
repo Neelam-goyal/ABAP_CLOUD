@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for PR print'
+define service Z_SD_PR_PRINT {
+  expose ZI_PR_PRINT;
+}

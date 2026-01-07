@@ -1,0 +1,36 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "India E-Invoice",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "India E-Invoice"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.einvoice"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_9AE0D7C25CE26033464F60C22B0CE77E79C44EAA_TM",
+    "semanticObject": "ZCREATE",
+    "action": "Manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_9AE0D7C25CE26033464F60C22B0CE77E79C44EAA_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "India E-Invoice",
+        "subtitle": "e-invoice",
+        "icon": "sap-icon://travel-expense-report"
+      }
+    }
+  ]
+}

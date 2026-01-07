@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Unloading Pass",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Unloading Pass"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.zunloadingpass"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_B5C081D0F03AF53D35D131E56022E8F2FFBFE78E_TM",
+    "semanticObject": "UnloadingPass",
+    "action": "PRINT",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_B5C081D0F03AF53D35D131E56022E8F2FFBFE78E_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Unloading Pass",
+        "icon": "sap-icon://print"
+      }
+    }
+  ]
+}

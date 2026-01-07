@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Packing List Process",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Packing List Process"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.zpacking"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_87C40B63A8C743AD0FFA5E0333DAD0DA5C7464B5_TM",
+    "semanticObject": "ZPACKINGLIST",
+    "action": "transactional",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_87C40B63A8C743AD0FFA5E0333DAD0DA5C7464B5_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Packing List Process",
+        "icon": "sap-icon://supplier"
+      }
+    }
+  ]
+}

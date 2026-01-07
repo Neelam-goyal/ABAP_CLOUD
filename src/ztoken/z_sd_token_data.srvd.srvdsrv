@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for token data'
+define service Z_SD_TOKEN_DATA {
+  expose ZI_TOKEN_DATA;
+}

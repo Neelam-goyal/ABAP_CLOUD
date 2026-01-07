@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Cash Book Report"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.cashbookrep"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_DC7298ABAE0CDD8ED916B511358C71000A9368E7_TM",
+    "semanticObject": "CASHBOOOKREP",
+    "action": "REPORT",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_DC7298ABAE0CDD8ED916B511358C71000A9368E7_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Cash Book Report"
+      }
+    }
+  ]
+}

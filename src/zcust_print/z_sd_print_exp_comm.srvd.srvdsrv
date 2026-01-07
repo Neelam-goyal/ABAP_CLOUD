@@ -1,0 +1,4 @@
+@EndUserText.label: 'Z_SD_PRINT_EXP_COMM'
+define service Z_SD_PRINT_EXP_COMM {
+  expose ZI_PRINT_EXP_COMM;
+}

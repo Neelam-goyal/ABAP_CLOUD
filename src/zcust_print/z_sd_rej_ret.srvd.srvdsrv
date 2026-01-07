@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for REj Ret'
+define service Z_SD_REJ_RET {
+  expose ZI_REJ_RET;
+}

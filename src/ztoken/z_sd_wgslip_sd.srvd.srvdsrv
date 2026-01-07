@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD wg slip'
+define service Z_SD_WGSLIP_SD {
+  expose ZI_WGSLIP_SD;
+}

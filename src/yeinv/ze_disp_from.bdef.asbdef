@@ -1,0 +1,14 @@
+managed implementation in class zbp_e_disp_from unique;
+strict ( 2 );
+
+define behavior for ZE_DISP_FROM //alias <alias_name>
+persistent table zsd_disp_from
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly:update ) storagelocation;
+}

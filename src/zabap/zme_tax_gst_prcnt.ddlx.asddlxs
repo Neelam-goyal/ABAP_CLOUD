@@ -1,0 +1,34 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'taxcode',
+                typeNamePlural: 'taxcode',
+                title: { type: #STANDARD, label: 'Travel', value: 'taxcode'} }
+               }
+annotate view ze_tax_gst_prcnt with
+{
+
+  @UI.facet: [ { id:              'Travel',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'taxcode',
+                 position:        10 } ]
+
+  @UI: {  lineItem:       [ { position: 10 } ],
+          identification: [ { position: 10 } ],
+          selectionField: [ { position: 10 } ] }
+  @EndUserText.label: 'Tax Code'
+  taxcode;
+
+  @UI: { lineItem:       [ { position: 20 } ], identification: [ { position: 20 } ] }
+  @EndUserText.label: 'CGST Rate'
+  cgstrate;
+
+  @UI: { lineItem:       [ { position: 30 } ], identification: [ { position: 30 } ] }
+  @EndUserText.label: 'SGST Rate'
+  sgstrate;
+
+  @UI: { lineItem:       [ { position: 40 } ], identification: [ { position: 40 } ] }
+  @EndUserText.label: 'IGST Rate'
+  igstrate;
+      
+  }

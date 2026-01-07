@@ -1,0 +1,15 @@
+managed implementation in class zbp_e_sysid unique;
+strict ( 2 );
+
+define behavior for ZE_SYSID //alias <alias_name>
+persistent table zsd_sysid
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+
+  field ( readonly:update ) objcode, sysid;
+  create;
+  update;
+  delete;
+}

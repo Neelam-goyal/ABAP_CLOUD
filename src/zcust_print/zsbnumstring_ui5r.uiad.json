@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Number To String Conversion",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Number To String Conversion"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.zsbnumstring"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_9EFEA1DBB4E90581A3910FE74AFEF0DEFAD90FA0_TM",
+    "semanticObject": "Z_SB_Num_String",
+    "action": "Report",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_9EFEA1DBB4E90581A3910FE74AFEF0DEFAD90FA0_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Number To String Conversion",
+        "icon": "sap-icon://document-text"
+      }
+    }
+  ]
+}

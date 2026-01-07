@@ -1,0 +1,14 @@
+managed implementation in class zbp_e_vendor_code unique;
+strict ( 2 );
+
+define behavior for ZE_VENDOR_CODE //alias <alias_name>
+persistent table zsd_vendor_code
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  field ( readonly:update ) customer, plant;
+  create;
+  update;
+  delete;
+}

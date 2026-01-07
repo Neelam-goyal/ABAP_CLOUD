@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Gate Entry Against Token No"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.gateentytoken"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_64B5D528257A12390E1BE681CB5A5FB1D04C9F50_TM",
+    "semanticObject": "ZToken",
+    "action": "Transactional",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_64B5D528257A12390E1BE681CB5A5FB1D04C9F50_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Gate Entry Against Token No",
+        "subtitle": "MM"
+      }
+    }
+  ]
+}

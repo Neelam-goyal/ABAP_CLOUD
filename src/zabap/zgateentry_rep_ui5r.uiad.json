@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Gate Entry Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Gate Entry Report"
+  },
+  "ui5AppDetails": {
+    "appId": "subblv.zgateentryrep"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_12ECD5CD4B60A2ECF302806DFF57EA126538F541_TM",
+    "semanticObject": "ZGate_rep",
+    "action": "Show",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_12ECD5CD4B60A2ECF302806DFF57EA126538F541_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Gate Entry Report",
+        "subtitle": "V4"
+      }
+    }
+  ]
+}

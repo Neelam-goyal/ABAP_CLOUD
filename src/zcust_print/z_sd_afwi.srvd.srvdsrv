@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for afwi'
+define service Z_SD_AFWI {
+  expose ZI_AFWI;
+}

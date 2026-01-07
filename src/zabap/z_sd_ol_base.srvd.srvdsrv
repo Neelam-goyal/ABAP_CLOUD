@@ -1,0 +1,4 @@
+@EndUserText.label: 'Base OL'
+define service Z_SD_OL_BASE {
+  expose ZI_OL_BASE;
+}

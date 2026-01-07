@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for cleartax credentials'
+define service Z_SD_CRED_CLR {
+  expose ZE_CRED_CLR;
+}

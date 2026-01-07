@@ -1,0 +1,81 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'MaterialWeightMaint', 
+    typeNamePlural: 'MaterialWeightMaints', 
+    title: {
+      type: #STANDARD, 
+      label: 'Material Weight Maintain', 
+      value: 'Material'
+    }
+  }
+}
+annotate view ZI_MaterialWeightMaint with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_MaterialWeightMaint', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'Material Weight Maintain', 
+    position: 1 
+  } ]
+  Material;
+  
+  @UI.identification: [ {
+    position: 2 , 
+    label: 'GrossWt'
+  } ]
+  @UI.lineItem: [ {
+    position: 2 , 
+    label: 'GrossWt'
+  } ]
+  GrossWt;
+  
+  @UI.identification: [ {
+    position: 3 , 
+    label: 'GrossWtUom'
+  } ]
+  @UI.lineItem: [ {
+    position: 3 , 
+    label: 'GrossWtUom'
+  } ]
+  @Consumption.valueHelpDefinition: [ {
+    entity: {
+      name: 'I_UnitOfMeasure', 
+      element: 'UnitOfMeasure'
+    }
+  } ]
+  GrossWtUom;
+  
+  @UI.identification: [ {
+    position: 4 , 
+    label: 'NetWt'
+  } ]
+  @UI.lineItem: [ {
+    position: 4 , 
+    label: 'NetWt'
+  } ]
+  NetWt;
+  
+  @UI.identification: [ {
+    position: 5 , 
+    label: 'NetWtUom'
+  } ]
+  @UI.lineItem: [ {
+    position: 5 , 
+    label: 'NetWtUom'
+  } ]
+  @Consumption.valueHelpDefinition: [ {
+    entity: {
+      name: 'I_UnitOfMeasure', 
+      element: 'UnitOfMeasure'
+    }
+  } ]
+  NetWtUom;
+}

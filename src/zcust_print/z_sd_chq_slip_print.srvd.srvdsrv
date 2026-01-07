@@ -1,0 +1,4 @@
+@EndUserText.label: 'Chq slip'
+define service Z_SD_CHQ_SLIP_PRINT {
+  expose ZI_CHQ_SLIP_PRINT;
+}

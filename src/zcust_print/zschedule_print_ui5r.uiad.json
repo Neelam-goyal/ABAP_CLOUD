@@ -1,0 +1,36 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Schedule Line Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Schedule Line Print"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.schedulelineprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_843341C9FBC30F42463F76BB3E2958BC5D332E95_TM",
+    "semanticObject": "ZSchedule",
+    "action": "print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_843341C9FBC30F42463F76BB3E2958BC5D332E95_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Schedule Line Print",
+        "subtitle": "schedule",
+        "icon": "sap-icon://gantt-bars"
+      }
+    }
+  ]
+}

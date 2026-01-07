@@ -1,0 +1,73 @@
+@AbapCatalog.sqlViewName: 'ZV_GOUT_REP'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Gateout report'
+@Metadata.ignorePropagatedAnnotations: true
+define view ZI_GOUT_REP
+  as select from zsd_gout_data as gout
+{
+
+  key gout.gentry_num         as GentryNum,
+  key gout.gentry_year        as GentryYear,
+  key gout.saledocument       as Saledocument,
+      gout.invoicenum         as Invoicenum,
+      gout.invoiceitem        as Invoiceitem,
+      gout.saledocitem        as Saledocitem,
+      gout.mblnr              as Mblnr,
+      gout.mjahr              as Mjahr,
+      gout.created_on         as CreatedOn,
+      gout.created_time       as CreatedTime,
+      gout.out_date           as OutDate,
+      gout.out_time           as OutTime,
+      gout.werks              as Werks,
+      gout.ewaybill_num       as EwaybillNum,
+      gout.materialdesc       as Materialdesc,
+      gout.remark             as Remark,
+      gout.uname              as Uname,
+      gout.vechnum            as Vechnum,
+      gout.transporter        as Transporter,
+      gout.driver_name        as DriverName,
+      gout.driver_num         as DriverNum,
+      gout.trans_mode         as TransMode,
+      gout.driver_contact     as DriverContact,
+      gout.driver_aadhar      as DriverAadhar,
+      gout.driver_dl_num      as DriverDlNum,
+      gout.check_rc           as CheckRc,
+      gout.check_pollt        as CheckPollt,
+      gout.check_tripal       as CheckTripal,
+      gout.check_insur        as CheckInsur,
+      gout.check_dl           as CheckDl,
+      gout.check_explosive    as CheckExplosive,
+      gout.check_permit       as CheckPermit,
+      gout.rcvaliditydate     as Rcvaliditydate,
+      gout.pollvaliditydate   as Pollvaliditydate,
+      gout.tripalvaliditydate as Tripalvaliditydate,
+      gout.insvaliditydate    as Insvaliditydate,
+      gout.dlvaliditydate     as Dlvaliditydate,
+      gout.explvaliditydate   as Explvaliditydate,
+      gout.permitvaliditydate as Permitvaliditydate,
+      gout.custcode           as Custcode,
+      gout.custname           as Custname,
+      gout.districtname       as Districtname,
+      gout.custaddress        as Custaddress,
+      gout.itemqty            as Itemqty,
+      gout.gross_wgt          as GrossWgt,
+      gout.tare_wgt           as TareWgt,
+      gout.net_wgt            as NetWgt,
+      gout.weight_uom         as WeightUom,
+      gout.whmgtchar          as whmgtchar,
+      gout.truckcapacity      as Truckcapacity,
+      gout.trucktype          as Trucktype,
+      gout.matnr              as Matnr,
+      gout.maktx              as Maktx,
+      gout.itemdesc           as Itemdesc,
+      gout.itemgrosswt        as Itemgrosswt,
+      gout.itemnetwt          as Itemnetwt,
+      gout.uom                as Uom,
+      gout.erdat              as Erdat,
+      gout.uzeit              as Uzeit,
+      gout.cuname             as Cuname,
+      gout.gedeleted          as Gedeleted
+
+}

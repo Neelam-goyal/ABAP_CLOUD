@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Gate Entry Process",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Gate Entry Process"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.gateentry"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_D9C71F4EDC7A96896090D8F465E604C2AE3086BD_TM",
+    "semanticObject": "ZGATEENTRY",
+    "action": "transactional",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_D9C71F4EDC7A96896090D8F465E604C2AE3086BD_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Gate Entry Process",
+        "icon": "sap-icon://collision"
+      }
+    }
+  ]
+}

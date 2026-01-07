@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for routing'
+define service Z_SD_ROUT_DATA {
+  expose ZI_ROUT_DATA;
+}

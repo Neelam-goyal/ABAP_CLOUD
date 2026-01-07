@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Gate OUT REPORT",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Gate OUT REPORT"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.zgateoutreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_4BA3D84C4F012BBC021D1208603D062B4F654FDB_TM",
+    "semanticObject": "ZGATE_REP",
+    "action": "Manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_4BA3D84C4F012BBC021D1208603D062B4F654FDB_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Gate OUT REPORT",
+        "subtitle": "sd"
+      }
+    }
+  ]
+}

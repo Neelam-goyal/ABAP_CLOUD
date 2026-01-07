@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for lot email id'
+define service Z_SD_INSP_LOT_EMAIL {
+  expose ZE_INSP_LOT_EMAIL;
+}

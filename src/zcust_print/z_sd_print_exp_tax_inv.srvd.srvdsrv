@@ -1,0 +1,4 @@
+@EndUserText.label: 'Z_SD_PRINT_EXP_TAX_INV'
+define service Z_SD_PRINT_EXP_TAX_INV {
+  expose ZI_PRINT_EXP_TAX_INV;
+}

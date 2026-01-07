@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD'
+define service Z_SD_GE_REP_NEW {
+  expose ZI_GE_REP_NEW;
+}

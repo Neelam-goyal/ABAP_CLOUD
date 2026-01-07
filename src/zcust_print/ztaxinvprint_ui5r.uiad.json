@@ -1,0 +1,36 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Customer Tax Invoice",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Customer Tax Invoice"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.fitaxinvoice"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_FB18F539E0D90779F8C37464705AF87CD59D8210_TM",
+    "semanticObject": "ZTAXINV",
+    "action": "print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_FB18F539E0D90779F8C37464705AF87CD59D8210_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Customer Tax Invoice",
+        "subtitle": "Print",
+        "icon": "sap-icon://print"
+      }
+    }
+  ]
+}

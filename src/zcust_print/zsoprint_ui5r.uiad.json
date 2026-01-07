@@ -1,0 +1,36 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Sales Order Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Sales Order Print"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.salesorderprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_CAFA2BABCEC67F7960E937A24B2A73F7B2C92600_TM",
+    "semanticObject": "ZSOPRINT",
+    "action": "print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_CAFA2BABCEC67F7960E937A24B2A73F7B2C92600_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Sales Order Print",
+        "subtitle": "so print",
+        "icon": "sap-icon://sales-document"
+      }
+    }
+  ]
+}

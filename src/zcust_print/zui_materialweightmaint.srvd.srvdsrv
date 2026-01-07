@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_MaterialWeightMaint_S'
+define service ZUI_MATERIALWEIGHTMAINT {
+  expose ZI_MATERIALWEIGHTMAINT_S as MaterialWeightMaAll;
+  expose ZI_MATERIALWEIGHTMAINT as MaterialWeightMaint;
+}

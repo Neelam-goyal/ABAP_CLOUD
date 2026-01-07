@@ -1,0 +1,93 @@
+managed with additional save implementation in class ZBP_I_MATERIALWEIGHTMAINT_S unique;
+strict;
+with draft;
+define behavior for ZI_MaterialWeightMaint_S alias MaterialWeightMaAll
+draft table ZMAT_WT_DAT_D_S
+with unmanaged save
+lock master total etag LastChangedAtMax
+authorization master( global )
+
+{
+  field ( readonly )
+   SingletonID;
+
+  field ( features : instance )
+   TransportRequestID;
+
+  field ( notrigger )
+   SingletonID,
+   LastChangedAtMax;
+
+
+  update;
+  internal create;
+  internal delete;
+
+  draft action ( features : instance ) Edit with additional implementation;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+  action ( features : instance ) SelectCustomizingTransptReq parameter D_SelectCustomizingTransptReqP result [1] $self;
+
+  association _MaterialWeightMaint { create ( features : instance ); with draft; }
+
+  validation ValidateTransportRequest on save ##NOT_ASSIGNED_TO_DETACT { create; update; }
+
+  side effects {
+    action SelectCustomizingTransptReq affects $self;
+  }
+  }
+
+define behavior for ZI_MaterialWeightMaint alias MaterialWeightMaint ##UNMAPPED_FIELD
+persistent table ZMAT_WT_DATA
+draft table ZMAT_WT_DATA_D
+etag master LocalLastChangedAt
+lock dependent by _MaterialWeightMaAll
+authorization dependent by _MaterialWeightMaAll
+
+{
+  field ( mandatory : create )
+   Material;
+
+  field ( readonly )
+   SingletonID,
+   LocalCreatedBy,
+   LocalCreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangeAt;
+
+  field ( readonly : update )
+   Material;
+
+  field ( notrigger )
+   SingletonID,
+   LocalCreatedBy,
+   LocalCreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangeAt;
+
+
+  update( features : global );
+  delete( features : global );
+
+  mapping for ZMAT_WT_DATA
+  {
+    Material = MATERIAL;
+    GrossWt = GROSS_WT;
+    GrossWtUom = GROSS_WT_UOM;
+    NetWt = NET_WT;
+    NetWtUom = NET_WT_UOM;
+    LocalCreatedBy = LOCAL_CREATED_BY;
+    LocalCreatedAt = LOCAL_CREATED_AT;
+    LocalLastChangedBy = LOCAL_LAST_CHANGED_BY;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+    LastChangeAt = LAST_CHANGE_AT;
+  }
+
+  association _MaterialWeightMaAll { with draft; }
+
+  validation ValidateTransportRequest on save ##NOT_ASSIGNED_TO_DETACT { create; update; delete; }
+}

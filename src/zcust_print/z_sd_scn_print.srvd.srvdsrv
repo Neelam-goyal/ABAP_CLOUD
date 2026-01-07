@@ -1,0 +1,4 @@
+@EndUserText.label: 'SCN Print'
+define service Z_SD_SCN_PRINT {
+  expose ZI_SCN_PRINT;
+}

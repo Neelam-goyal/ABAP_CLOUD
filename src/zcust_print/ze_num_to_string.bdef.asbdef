@@ -1,0 +1,14 @@
+managed implementation in class zbp_e_num_to_string unique;
+strict ( 2 );
+
+define behavior for ZE_NUM_TO_STRING //alias <alias_name>
+persistent table zsd_num2string
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  field ( readonly:update ) num;
+  create;
+  update;
+  delete;
+}

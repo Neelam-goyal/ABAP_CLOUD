@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Weighment Slip",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Weighment Slip"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.weighingslip"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_9CE20CDDCD9AA8163278B649639C25604FEF6EB7_TM",
+    "semanticObject": "WEIGHTMENT_SLIP",
+    "action": "PRINT",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_9CE20CDDCD9AA8163278B649639C25604FEF6EB7_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Weighment Slip",
+        "icon": "sap-icon://print"
+      }
+    }
+  ]
+}

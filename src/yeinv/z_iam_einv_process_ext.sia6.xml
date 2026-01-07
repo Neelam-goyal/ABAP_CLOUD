@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SIA6" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SIA6>
+    <MAIN_OBJECT>
+     <NAME>Z_IAM_EINV_PROCESS_EXT</NAME>
+     <TYPE>SIA6</TYPE>
+     <DESCRIPTION>E-inv</DESCRIPTION>
+     <RESPONSIBLE>CB9980000003</RESPONSIBLE>
+     <MASTER_LANGUAGE>EN</MASTER_LANGUAGE>
+     <MASTER_SYSTEM>M1C</MASTER_SYSTEM>
+     <PACKAGE_REF>
+      <PACKAGE_NAME>YEINV</PACKAGE_NAME>
+     </PACKAGE_REF>
+     <ABAP_LANGU_VERSION>5</ABAP_LANGU_VERSION>
+    </MAIN_OBJECT>
+    <APP_ID>Z_IAM_EINV_PROCESS_EXT</APP_ID>
+    <APP_TYPE>EXT</APP_TYPE>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
+    <UI_APP_ID>ZEINVOIE_UI5R</UI_APP_ID>
+    <SERVICE>
+     <item>
+      <REL_NAME>ZHTTP_EINV_PROC</REL_NAME>
+      <REL_TYPE>HTTP</REL_TYPE>
+      <APP_ID>Z_IAM_EINV_PROCESS_EXT</APP_ID>
+      <SRVC_NAME>A24079F83E33906E2303F17C9117BC</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <TEXT>Http for e-invoice</TEXT>
+      <TYPE_TEXT>HTTP Service</TYPE_TEXT>
+     </item>
+     <item>
+      <REL_NAME>ZHTTP_EINV_PROC_CLRTX</REL_NAME>
+      <REL_TYPE>HTTP</REL_TYPE>
+      <APP_ID>Z_IAM_EINV_PROCESS_EXT</APP_ID>
+      <SRVC_NAME>5BC96621C4317F778FC2DC0E8DAB0F</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <TEXT>Http for e-invoice: Cleartax</TEXT>
+      <TYPE_TEXT>HTTP Service</TYPE_TEXT>
+     </item>
+     <item>
+      <REL_NAME>ZHTTP_EWAY_NOIRN_PROC_CLRTX</REL_NAME>
+      <REL_TYPE>HTTP</REL_TYPE>
+      <APP_ID>Z_IAM_EINV_PROCESS_EXT</APP_ID>
+      <SRVC_NAME>580B811A6386C9BF65A75FB49EAF6D</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <TEXT>Eway Bill Process without IRN CLRTX</TEXT>
+      <TYPE_TEXT>HTTP Service</TYPE_TEXT>
+     </item>
+     <item>
+      <REL_NAME>ZHTTP_EWAY_PROC_CLRTX</REL_NAME>
+      <REL_TYPE>HTTP</REL_TYPE>
+      <APP_ID>Z_IAM_EINV_PROCESS_EXT</APP_ID>
+      <SRVC_NAME>1CAB68917610844E57F9FEF386AEC8</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <TEXT>Eway Bill Process CLRTX</TEXT>
+      <TYPE_TEXT>HTTP Service</TYPE_TEXT>
+     </item>
+    </SERVICE>
+    <PUBLISH_STATUS>p</PUBLISH_STATUS>
+   </SIA6>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,16 @@
+managed implementation in class zbp_e_min_stock unique;
+strict ( 2 );
+
+define behavior for ZE_MIN_STOCK //alias <alias_name>
+persistent table zmm_min_stock
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly:update ) plant, material;
+
+
+}

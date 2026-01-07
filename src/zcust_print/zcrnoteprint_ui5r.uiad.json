@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Credit Note Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Credit Note Print"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.creditprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_3FEB9182AE225C800758102FC8F064B704B05634_TM",
+    "semanticObject": "ZCRNOTEPRINT",
+    "action": "PRINT",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_3FEB9182AE225C800758102FC8F064B704B05634_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Credit Note Print",
+        "icon": "sap-icon://activity-2"
+      }
+    }
+  ]
+}

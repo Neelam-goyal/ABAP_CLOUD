@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Maintain Text Field",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Maintain Text Field"
+  },
+  "ui5AppDetails": {
+    "appId": "subblv.zmainttxtfld"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_20DE91B5245715482A2970C108002369409EBAF5_TM",
+    "semanticObject": "Zmaint_Text",
+    "action": "Manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_20DE91B5245715482A2970C108002369409EBAF5_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Maintain Text Field",
+        "icon": "sap-icon://badge"
+      }
+    }
+  ]
+}

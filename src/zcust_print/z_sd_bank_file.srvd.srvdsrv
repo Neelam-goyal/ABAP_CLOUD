@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for bank file'
+define service Z_SD_BANK_FILE {
+  expose ZI_BANK_PAYMENT;
+}

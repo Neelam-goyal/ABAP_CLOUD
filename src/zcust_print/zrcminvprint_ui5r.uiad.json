@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "RCM Invoice Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "RCM Invoice Print"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.rcminvoice"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_180EE598982BF2759CA4C555705637BCD7F2482E_TM",
+    "semanticObject": "ZRCMINVPRINT",
+    "action": "PRINT",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_180EE598982BF2759CA4C555705637BCD7F2482E_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "RCM Invoice Print",
+        "icon": "sap-icon://ai"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Ageing data'
+define service Z_SD_AGE_DATA {
+  expose ZI_AGE_DATA;
+}

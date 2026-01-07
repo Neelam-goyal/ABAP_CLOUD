@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Out Pass Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Out Pass Print"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.zdeliveryprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_25C0B2EC38824E7F3EA148B37B29E1D18822935F_TM",
+    "semanticObject": "ZDELIVERYUNITPRINT",
+    "action": "Print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_25C0B2EC38824E7F3EA148B37B29E1D18822935F_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Out Pass Print"
+      }
+    }
+  ]
+}

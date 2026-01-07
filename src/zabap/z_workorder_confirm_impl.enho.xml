@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>Work order confirm</SHORTTEXT>
+   <SPOT_NAME>ES_COBADI_WORKORDER_GOODSMOVT</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>ES_COBADI_WORKORDER_GOODSMOVT</SPOT_NAME>
+     <BADI_NAME>BD_WORKORDER_CONFIRM</BADI_NAME>
+     <IMPL_NAME>Z_WORKORDER_CONFIRM_IMPL</IMPL_NAME>
+     <IMPL_CLASS>ZCL_WORKORDER_CONFIRM</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <IMPL_SHORTTEXT>Work order confirm</IMPL_SHORTTEXT>
+     <LOCKED_IN_CUSTOMIZING>X</LOCKED_IN_CUSTOMIZING>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

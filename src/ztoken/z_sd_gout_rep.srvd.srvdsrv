@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for gate out rep'
+define service Z_SD_GOUT_REP {
+  expose ZI_GOUT_REP;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Vendor Rejection'
+define service Z_SD_VEN_REJ {
+  expose ZI_VENDOR_REJ_REPORT;
+}

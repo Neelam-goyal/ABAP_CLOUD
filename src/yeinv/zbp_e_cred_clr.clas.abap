@@ -1,0 +1,9 @@
+CLASS zbp_e_cred_clr DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF ze_cred_clr.
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS ZBP_E_CRED_CLR IMPLEMENTATION.
+ENDCLASS.

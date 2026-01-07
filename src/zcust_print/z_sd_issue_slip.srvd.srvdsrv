@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for issue slip'
+define service Z_SD_ISSUE_SLIP {
+  expose ZI_ISSUE_SLIP;
+}

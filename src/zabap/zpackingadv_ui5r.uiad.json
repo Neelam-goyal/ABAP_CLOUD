@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Packing Advice"
+  },
+  "ui5AppDetails": {
+    "appId": "blv.packingadv"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_93337F4C93C2F09EAF17934B0176B1FDE7A9CD19_TM",
+    "semanticObject": "PACKING_ADVICE",
+    "action": "Fetch",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_93337F4C93C2F09EAF17934B0176B1FDE7A9CD19_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Packing Advice",
+        "icon": "sap-icon://cause"
+      }
+    }
+  ]
+}

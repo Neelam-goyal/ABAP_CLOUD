@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service binding for sale reg'
+define service Z_SD_SALE_REG {
+  expose ZI_SALE_REG;
+}

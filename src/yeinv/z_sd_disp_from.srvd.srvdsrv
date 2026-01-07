@@ -1,0 +1,4 @@
+@EndUserText.label: 'Disp from'
+define service Z_SD_DISP_FROM {
+  expose ZE_DISP_FROM;
+}

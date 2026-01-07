@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for exceed stock report'
+define service Z_SD_EXCEED_STOCK_REP {
+  expose ZI_EXCEED_STOCK_REP;
+}

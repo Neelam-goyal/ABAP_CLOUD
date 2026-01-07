@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for Num to string'
+define service Z_SD_NUM_TO_STRING {
+  expose ZE_NUM_TO_STRING;
+}

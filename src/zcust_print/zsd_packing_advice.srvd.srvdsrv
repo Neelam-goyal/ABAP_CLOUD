@@ -1,0 +1,4 @@
+@EndUserText.label: 'Packing Advice Service Definations'
+define service ZSD_PACKING_ADVICE {
+  expose ZI_PACKING_ADVICE;
+}

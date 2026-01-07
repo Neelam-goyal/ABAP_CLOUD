@@ -1,0 +1,4 @@
+@EndUserText.label: 'sd for sch po'
+define service Z_SD_SCHEDGAGRMT_PO {
+  expose ZI_Schedgagrmt_PO;
+}
